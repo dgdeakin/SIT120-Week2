@@ -8,6 +8,9 @@
     <title>Responsive Web Design Basics</title>
 
     <style>
+      * {
+        box-sizing: border-box;
+      }
       .left {
         background-color: #2196f3;
         padding: 20px;
@@ -25,6 +28,14 @@
         padding: 20px;
         float: left;
         width: 20%; /* The width is 20%, by default */
+      }
+
+      @media screen and (max-width: 800px) {
+        .left,
+        .main,
+        .right {
+          width: 100%;
+        }
       }
     </style>
   </head>
@@ -61,3 +72,6 @@
     If the viewport is 50cm wide, 1vw is 0.5cm. -->
   </body>
 </html>
+
+
+<!-- Resources: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing  -->
